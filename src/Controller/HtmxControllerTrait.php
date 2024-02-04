@@ -23,7 +23,7 @@ trait HtmxControllerTrait
      * @throws NotFoundExceptionInterface
      * @throws Throwable
      */
-    protected function renderBlock(TemplateBlock ...$blocks): HtmxResponse
+    protected function renderBlocks(TemplateBlock ...$blocks): HtmxResponse
     {
         $content = '';
         foreach ($blocks as $block) {
